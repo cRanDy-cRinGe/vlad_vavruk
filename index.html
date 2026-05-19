@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4 - JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Робота із JavaScript</h1>
+        <button id="theme-toggle">Перемкнути тему (День/Ніч)</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Коментарі попередніх роботодавців</h2>
+            <div id="comments-container"></div>
+        </section>
+    </main>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h3>Форма зворотнього зв'язку</h3>
+            
+            <form action="https://formspree.io/f/xaqknvvr" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону">
+                <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Відправити!</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
